@@ -1292,16 +1292,3 @@ autocmd BufWritePre *.markdown,*.md,*.text,*.txt,*.wiki,*.cnx call PanGuSpacing(
 nmap <A-p> :CtrlPClearAllCaches<CR>
 " }}}
 
-"fuck you
-"fuck
-"fuck
-"fuck
-"fuck
-" cao ni ma
-" cao ni ma
-" cao ni ma
-" cao ni ma
-" cao ni ma
-" cao ni ma
-" cao ni ma
-" cao ni ma
