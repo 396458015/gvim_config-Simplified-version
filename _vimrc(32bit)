@@ -5,7 +5,9 @@
 "|_|  |_| |_|         \_/  |___|_|  |_|_| \_\\____|
 "=============================================================================
 "     FileName: _vimrc
-"         Desc:
+"         Desc: compared to the vimrc(gvim supports python), three plugins that
+"         need to support Python are missing: <<LeaderF>> <<Markdown-preview>>
+"         <<mathjax-support>>.this version search plugin is use <<CtrlP>> instead of <<LeaderF>>.
 "       Author: MaXL
 "        Email: ismaxiaolong@gmail.com
 "     HomePage: https://twitter.com/Maxl56679061
