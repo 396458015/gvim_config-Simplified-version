@@ -1317,6 +1317,7 @@ let g:python_highlight_all = 1              " Enable all syntax highlighting fea
 " }}}
 
 " {{{ MarkDown Plugin -<< markdown-toc >> << table-mode >><< gabrielelana-markdown >> << Pangu >>
+
 "<< Plugin table-mode >>
 au FileType markdown let g:table_mode_corner = '|'
 au FileType markdown let g:table_mode_delimiter = ' '
@@ -1343,7 +1344,6 @@ autocmd FileType markdown nnoremap <silent> <Tab> :call markdown#SwitchStatus()<
 " << Pangu >>
 " 自动格式化,标准化中文排版
 autocmd BufWritePre *.markdown,*.md,*.text,*.txt,*.wiki,*.cnx call PanGuSpacing()
-
 " }}}
 
 " {{{<< Plugin - CtrlP  >>
