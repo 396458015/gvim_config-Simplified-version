@@ -5,9 +5,8 @@
 " |_|  |_| |_|         \_/  |___|_|  |_|_| \_\\____|
 "=============================================================================
 "     FileName: _vimrc
-"         Desc: compared to the _vimrc, there are two plugins missing:
-"         <<LeaderF>>(need to support Python), <<iamcco/markdown-preview.nvim>>
-"         (system need install nodejs and yarn).
+"         Desc: compared to the _vimrc, there are one plugins missing:
+"         <<LeaderF>>(need to support Python).
 "         In this version, the search plugin is use <<CtrlP>> instead of <<LeaderF>>.
 "       Author: MaXL
 "        Email: ismaxiaolong@gmail.com
@@ -295,6 +294,9 @@
 " <C-n> <C-p>            --搜索历史
 
 " ----------------------Markdown--------------------------
+
+" << Plugin - iamcco/markdown-preview.nvim >>
+" <F12>                 --打开浏览器实时预览markdown
 
 " << Plugin - plasticboyvim - markdown >>
 " <leader>to          :Toc  (通过quickfix 窗口打开目录)
@@ -1421,6 +1423,36 @@ autocmd FileType markdown nnoremap <leader>tc :GenTocMarked<Cr>
 
 " 自动格式化,标准化中文排版(当前未启用)
 "autocmd BufWritePre *.markdown,*.md,*.text,*.txt,*.wiki,*.cnx call PanGuSpacing()
+" }}}
+
+" {{{ MarkDown Preview - << Plugin - iamcco/markdown-preview.nvim >> (需安装:nodejs 和 yarn)
+
+" 安装nodejs 和 yarn. 若不能预览markdown(通过:mess查看,有vim-node-rpc error)
+" 解决途径:通过系统 CMD 到该插件 app 目录下(\Vim\vimfiles\bundle\iamcco markdown-preview.nvim\app)执行 yarn install 即可使用.
+
+let g:mkdp_auto_start = 0
+let g:mkdp_auto_close = 0
+let g:mkdp_refresh_slow = 0
+let g:mkdp_command_for_global = 0
+let g:mkdp_open_to_the_world = 0
+let g:mkdp_open_ip = ''
+let g:mkdp_echo_preview_url = 0
+let g:mkdp_browserfunc = ''
+let g:mkdp_preview_options = {
+            \ 'mkit': {},
+            \ 'katex': {},
+            \ 'uml': {},
+            \ 'maid': {},
+            \ 'disable_sync_scroll': 0,
+            \ 'sync_scroll_type': 'middle',
+            \ 'hide_yaml_meta': 1,
+            \ 'sequence_diagrams': {}
+            \ }
+let g:mkdp_markdown_css = ''
+let g:mkdp_highlight_css = ''
+let g:mkdp_port = ''
+let g:mkdp_page_title = '「${name}」'
+nmap <F12> <Plug>MarkdownPreview
 " }}}
 
 " {{{<< Plugin - CtrlP  >>
