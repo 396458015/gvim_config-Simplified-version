@@ -5,7 +5,7 @@
 " |_|  |_| |_|         \_/  |___|_|  |_|_| \_\\____|
 "=============================================================================
 "     FileName: _vimrc
-"         Desc: compared to the _vimrc, there are one plugins missing:
+"         Desc: compared to the _vimrc, there's one plugins missing:
 "         <<LeaderF>>(need to support Python).
 "         In this version, the search plugin is use <<CtrlP>> instead of <<LeaderF>>.
 "       Author: MaXL
